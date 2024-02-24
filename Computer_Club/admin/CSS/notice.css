@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 954px;
+    margin: 20px auto;
+    background-color: #e7dddd;
+    padding: 20px;
+}
+#content main {
+    width: 100%;
+    padding: 36px 24px;
+    font-family: var(--poppins);
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+td.tbdate {
+    font-size: smaller;
+    font-family: math;
+    text-align: center;
+    color: #180b0b;
+    padding: 15px;
+}
+.star{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: red;
+}
+.left {
+    text-align: center;
+}
+h1 {
+    margin-top: 44px;
+    color: #333;
+}
+h2 {
+    color: #333;
+}
+
+form {
+    margin-top: 20px;
+} 
+.x1, .x2, .x3, .x4, .x5 {
+    margin-bottom: 15px;
+}
+
+.date, .tittle, .description, .image, .update {
+    padding: 2px;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 21px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 9px;
+    border: none;
+    cursor: pointer;
+    border-radius: 11px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* ---------------Notice slider------------*/
+
+a #anchortag{
+    color: black;
+    
+}
+
+main .col2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.latest-news {
+    width: 100%;
+}
+.notice{
+    display: flex;
+    word-wrap: break-word;
+}
+
+.t1{
+   width: 100%;
+}
+
+.bg_tr1{
+    background-color: #a1a1a1;
+   font-size: 20px;
+}
+.edit-btn {
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    background: #5c420f;
+}
+.edit-btn:hover{
+    border-color: #333;
+    box-shadow: 0px 2px 10px 7px #00aed9;
+    color: #000;
+}
+
+.delete-btn {
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background: darkslategrey;
+}
+.delete-btn:hover{
+    border-color: #333;
+    box-shadow: 0px 2px 10px 7px #00aed9;
+    color: #000;
+}
+
+
+head-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #fff;
+}
+.heading-section {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 5px;
+    background: #00aed9;
+    color: white(221, 36, 36);
+}
+
+.event-date {
+    background: #00aed9;
+    width: 100px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px;
+    margin: 5px 10px 0 0;
+}
+li #Next{
+    justify-content: center;
+    text-align: justify;
+    display: block;
+}

@@ -1,0 +1,11 @@
+input {
+    font-weight: 100;
+    border: 2px salmon;
+    font-size: 12px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+    text-align: center;
+    border-radius: 6px;
+    height: 4vh;
+    width: 16vw;
+}

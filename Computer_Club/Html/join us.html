@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ecoomerce website</title>
+    <link rel="stylesheet" href="../CSS/join_us.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="all_h">
+        <section id="header">
+            <a href="#"><img src="../images/FINAL NBIU.png" alt="" class="logo"> </a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a href="../PHP/sourov.php">HOME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="../PHP/committee.php">COMMITTEE </a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="../PHP/home_event.php">EVENT</a></li>
+                    <li><a class="active" href="join us.html">JOIN US</a></li>
+                    <a href="#" id="close"> <i class="fa fa-times"></i></a>
+                </ul>
+
+            </div>
+            <div id="mobile">
+                <i id="bar" class="fa fa-outdent "></i>
+            </div>
+        </section>
+
+
+        <!--From-->
+        <div class="fromsection">
+
+            <div class="image_L">
+
+                <img class="form_image" src="../images/FINAL-NBIU.jpg" alt="" srcset="">
+
+            </div>
+
+            <div class="register_from">
+                <div class="header2">
+                    <a href="#" class="from_logo2">
+                        <img class="logo_imgs" src="../images/FINAL-NBIU.jpg" alt="Logo">
+
+                    </a>
+                    <p id="CCMF" href="#"><br>Computer Club Membership
+                    </p>
+
+                    </a> <a href="#" class="from_logo2">
+                        <img class="logo_imgs" src="../images/NBIU_logo.png" alt="Logo">
+
+                    </a>
+                </div>
+                <hr>
+
+                <form action="../PHP/database.php" method="post" class="rgform">
+
+                    <div class="fcol">
+                        <label for="nm" id="fromlabel"> First Name: </label> <input type="text"
+                            placeholder=" Enter your name" id="color-text" name="First_Name"><br>
+
+                        <label for="SI" id="fromlabel">Student ID:</label><input type="number" placeholder=" your ID "
+                            name="Student_ID"> <br>
+                        <label for="dept" id="fromlabel">Deptartment:</label>
+
+                        <select name="Department">
+                            <option value="CSE">Computer Science & Engineering</option>
+                            <option value="EEE">Electrical and Electronic Engineering</option>
+                        </select> <br>
+
+                        <label for="CN" id="fromlabel"> Contact Number:</label> <input type="text"
+                            placeholder="  Your Contact Number:" name="Contact_Number"><br>
+
+                        <label for="Computer skill" id="fromlabel"> Computer Skill: </label><input type="text"
+                            placeholder=" Available Skill" name="Computer_Skill"> <br>
+                        <label for="Computer skill" id="fromlabel"> Other Skill: </label><input type="text"
+                            placeholder=" Available Skill" name="Other_Skill"> <br>
+                    </div>
+
+                    <div class="fcol">
+                        <label for="nm" id="fromlabel"> Last Name: </label> <input type="text"
+                            placeholder=" Enter your name" name="Last_Name"> <br>
+                        <label for="batch" id="fromlabel">Batch </label><input type="number"
+                            placeholder=" Enter your batch" name="Batch">
+                        <br>
+                        <label for="av" id="fromlabel">Available Monday 2:00-5:30?</label>
+                        <select name="Available">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                        <br>
+                        <label for="em" id="fromlabel">Email:</label><input type="email" placeholder=" Enter your email"
+                            name="Email"> <br>
+                        <label for="learn" id="fromlabel"> What do you want to learn: </label> <input type="text"
+                            placeholder=" " name="Learning_Field"><br>
+                        <label for=" submit" id="fromlabel"> Click the submit button:</label> <button type="submit"
+                            id=" fromlabel">Submit</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- Footer-->
+        <footer class="section-p1">
+            <div class="col">
+                <h4>Campus</h4>
+                <p><i class='fa fa-institution' id="ad1"></i> Chowddopai, Natore Road,<br>Motihar, Rajshahi, Bangladesh
+                </p>
+                <p><i class="fa fa-phone-square" id="ad1"></i> +8880 1788 107942 </p>
+                <p><i class="fa fa-envelope" id="ad1"></i> sourov00p@gmail.com </p>
+                <p> <i class="fa fa-clock-o" id="ad1"></i> 10:00 - 18:00 Mon- Sat</p>
+            </div>
+
+            <div class="col">
+
+            <div class="col1" style="margin: 0px 20px;">
+                <h4>About US</h4>
+                <div class="text">
+
+                    Where tech passion thrives,skills <br>
+                    blossom, and friendships spark in <br>
+                    a supportive community.
+
+                </div>
+                </div>
+            </div>
+
+            <div class="col">
+
+                <h4>Important Links</h4>
+                <a href="../Html/contact.html"> <i class='fa fa-arrow-right' id="ad1"></i> Contact</a>
+                <a href="../Html/join us.html"> <i class='fa fa-arrow-right' id="ad1"></i>Membership from</a>
+                <a href="sourov.php"> <i class='fa fa-arrow-right' id="ad1"></i>Notice board</a>
+                <a href="committee.php"> <i class='fa fa-arrow-right' id="ad1"></i>COMMITTEE</a>
+            </div>
+
+            <div class="col">
+
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa fa-facebook-square" id="social"></i>
+                    <i class="fa fa-skype" id="social"></i>
+                    <i class="fa fa-instagram" id="social"></i>
+                    <i class="fa fa-youtube" id="social"></i>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+
+            <p>Copyright © 2013 NBIU. All rights reserved. </p>
+            <p>Developed by sourov & Mahfuz</p>
+        </div>
+
+
+    </div>
+    
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

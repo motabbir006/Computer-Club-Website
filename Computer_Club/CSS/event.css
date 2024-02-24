@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'New Tagomin';
+}
+
+.all_h {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-p1 {
+    padding: 20px 80px;
+}
+
+
+body {
+    width: 100%;
+}
+
+/* Header start*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5PX 15PX rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    height: 60px;
+    background: transparent;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile {
+    display: none;
+    align-items: center;
+}
+#close {
+    display: none;
+}
+/*event*/
+
+.section-event {
+    padding: 20px 80px;
+}
+main {
+    background: #E3E6F3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .eventcol {
+    margin: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.img-event{
+    height: 20vh;
+}
+#ancdec {
+    text-decoration: none;
+}
+.eventcol .box2 #p {
+    padding: 10px 0;
+}
+h2:hover {
+    color: green;
+}
+div.box1 {
+    padding: 20px;
+    text-align: start;
+}
+div.box2 {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+}
+
+h4 {
+    padding: 2px 0px 10px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(252, 252, 252);
+}
+h5 {
+    padding: 2px 0px 10px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(7, 3, 3);
+}
+
+/*FOOTER*/
+
+.section-p1{
+    padding: 40px 80px 10px 80px;
+} 
+
+
+footer{
+    color: #f4f1f1;
+    background: #272727; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer h4{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+footer p #ad1, footer a #ad1{
+    padding-right: 10px;
+}
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #f4f1f1;
+    margin-bottom: 10px;
+}
+footer .col .icon{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+footer .col .icon #social{
+    cursor: pointer;
+    height: 28px;
+    font-size: 30px;
+    padding-right: 20px;
+}
+footer .icon i:hover, 
+footer a:hover{
+    color: #10efe0;
+}
+.copyright{
+    display: flex;
+    color: rgb(238, 238, 238);
+    background: #272727;
+    text-align: end;
+    padding: 0px 20px 10px 20px;
+    font-size: 14px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+@media(max-width:1300px) {
+    .fromsection {
+        display: flex;
+        width: 100%;
+        height: 53vh;
+    }
+
+    input,
+    select,
+    button {
+        height: 3vh;
+    }
+
+    #CCMF {
+        font-size: 24px;
+    }
+
+    .rgform {
+        padding: 20px 32px;
+    }
+
+
+    form .fcol1 {
+        padding-right: 5vw;
+    }
+
+    .fcol #fromlabel {
+        font-size: 14px;
+        font-weight: bolder;
+
+    }
+
+
+}
+
+@media (max-width:900px) {
+    #CCMF {
+        font-size: 20px;
+    }
+
+    .logo_imgs {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    .fcol #fromlabel {
+        font-size: 12px;
+        font-weight: bolder;
+    }
+}
+
+
+@media(max-width:640px) {
+    .rgform {
+        padding: 12px 8px;
+    }
+
+    #CCMF {
+        font-size: 14px;
+    }
+
+    .logo_imgs {
+        height: 62px;
+        width: 62px;
+        border-radius: 50%;
+    }
+
+    .fcol #fromlabel {
+        font-size: 12px;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width:400) {
+
+    input,
+    select,
+    button {
+        font-size: 13px;
+        margin-top: 2px;
+        height: 2vh;
+        width: 41vw;
+    }
+}
+
+@media (max-width:470px) {
+
+
+    .rgform {
+        padding: 14px 49px;
+    }
+
+    .image_L {
+        display: none;
+        width: 54%;
+        height: 100%;
+        background-color: red;
+    }
+
+    .register_from {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(164, 164, 158);
+    }
+
+    input,
+    select,
+    button {
+        font-size: 11px;
+        margin-top: 2px;
+        height: 2vh;
+        width: 33vw;
+    }
+
+    .fcol #fromlabel {
+        font-size: 10px;
+        font-weight: bolder;
+    }
+
+}
+
+@media (max-width:799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+}

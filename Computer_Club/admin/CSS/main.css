@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.all{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.main{
+
+    width: 100%;
+}
+#name_t{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+#header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #E3E6F3;
+    box-shadow: 0 5PX 15PX rgba(0,0,0,0.06);
+    z-index: 999;
+    position:sticky;
+    top: 0;
+    left: 0;
+
+}
+.logo{
+    height: 60px;
+    background: transparent;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none; 
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active1{
+  color: #088178;
+}
+#navbar li a.active1::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+main{
+    background-color: rgb(78, 75, 75);
+  color: #1a1a1a;
+  text-align: center;
+}
+form{
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.x1 {
+width: 7%;
+display: flex;
+flex-direction: column;
+}
+ .x2 {
+width: 15%;
+display: flex;
+flex-direction: column;
+}
+.x3 {
+width: 30%;
+display: flex;
+flex-direction: column;
+}
+.x4 {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+}
+.x5 {
+width: 25%;
+display: flex;
+flex-direction: column;
+}
+
+
+.x1, .x2 , .x3 , .x4 , .x5{
+background-color: aliceblue;
+}
+
+h1{
+    text-align: start;
+    padding: 15px;
+    color: aquamarine;
+}
+p{
+    font-size: 20px;
+    padding: 15px;
+    color: rgb(1, 11, 8);
+
+}
+.update p{
+    font-size: 15px;
+}
+input {
+    box-sizing: border-box;
+    height: auto;
+    width: 94%;
+    overflow: hidden;
+}
+button {
+    width: 50%;
+    height: 3vw;
+    text-align: center;
+    border: 2px solid gray;
+    color: #1a1a1a;
+    background-color: #088178;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+b{
+    color: red;
+}

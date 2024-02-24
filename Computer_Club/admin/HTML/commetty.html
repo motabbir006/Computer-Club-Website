@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="stylesheet" href="../CSS/index.css">
+	<link rel="stylesheet" href="../CSS/com.css">
+	<title>AdminHub</title>
+		<style>
+		/* Add your custom CSS styles here */
+		.imgBx {
+			position: relative;
+			overflow: hidden;
+			width: 150px;
+			height: 150px;
+			margin: 0 auto;
+		}
+
+		.imgBx img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		.t{
+			margin: 0px 35px;
+		}
+		#fileInput1,#fileInput2,#fileInput3,#fileInput4,#fileInput5, #fileInput6{
+			margin: 30px 0px 0px 10px;
+		}
+	</style>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<img class="logooo" src="../images/FINAL NBIU.png" alt="" style=" padding: 5px; width: 4vw; margin: 10px; margin-right: 20px;">
+			<span class="text">AdminPanel</span>
+		</a>
+		<ul class="side-menu top">
+			<!-- <li >
+				<a href="index.php">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Home page</span>
+				</a>
+			</li> -->
+			<li >
+				<a href="notice.php">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Notice Section </span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="commetty.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Commetty</span>
+				</a>
+			</li>
+			<li>
+				<a href="Member.php">
+                    <i class='bx bxs-group' ></i>
+					
+					<span class="text">Member Request</span>
+				</a>
+			</li>
+			<li>
+				<a href="feedback.php">
+                    <i class='bx bxs-message-dots' ></i>
+					<span class="text">Feedback</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+		
+			<form action="#">
+				<div class="form-input">
+					
+					 <i class='bx bx-s' ></i>
+				</div>
+			</form>
+	
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>	
+				<div class="committee">
+					<div class="com1">
+						<form action="../PHP/r1.php" method="post"  enctype="multipart/form-data">
+							<div class="imgBx">
+								<label for="fileInput1">
+									<img src="img/placeholder.png" id="imgPreview1" name="img" alt="">
+								</label>
+								<input type="file" name="img" class="img" id="fileInput1" accept="image/*" onchange="previewImage(event, 'imgPreview1')">
+							</div>
+							<div class="t">
+							<input type="text" placeholder="Name" name="name">
+							<input type="text" placeholder="Which position" name="position"> 
+							<input type="text" placeholder="Description" name="description"><br>
+							<button type="submit" name="btn1" class="delete-btn">Save</button>
+						</div>
+						</form>
+					</div>
+	
+		
+					<div class="com2">
+						<div class="com1">
+
+							<form action="../PHP/r1.php" method="post"  enctype="multipart/form-data">
+								<div class="imgBx">
+									<label for="fileInput2">
+										<img src="img/placeholder.png" id="imgPreview2" alt=" ">
+									</label>
+									<input type="file" class="img" name="img" id="fileInput2" accept="image/*" onchange="previewImage(event, 'imgPreview2')">
+								</div>
+								<div class="t">
+									<input type="text" placeholder="Name" name="name">
+									<input type="text" placeholder="Which position" name="position"> 
+									<input type="text" placeholder="Description" name="description"><br>
+									<button type="submit" name="btn2" class="delete-btn">Save</button>
+								</div>
+							</form>
+						</div>
+		
+						<div class="com1">
+					
+							<form action="../PHP/r1.php" method="post"  enctype="multipart/form-data">
+								<div class="imgBx">
+									<label for="fileInput3">
+										<img src="img/placeholder.png" id="imgPreview3" alt=" ">
+									</label>
+									<input type="file"  name="img" class="img" id="fileInput3" accept="image/*" onchange="previewImage(event, 'imgPreview3')">
+								</div>
+								<div class="t">
+									<input type="text" placeholder="Name" name="name">
+									<input type="text" placeholder="Which position" name="position"> 
+									<input type="text" placeholder="Description" name="description"><br>
+									<button type="submit"  name="btn3" class="delete-btn">Save</button>
+								</div>
+							</form>
+		
+						</div>
+					</div>
+		
+		
+					<div class="com3">
+						<div class="com1">
+							<form action="../PHP/r1.php" method="post"  enctype="multipart/form-data">
+								<div class="imgBx">
+									<label for="fileInput4">
+										<img src="img/placeholder.png" id="imgPreview4" alt=" ">
+									</label>
+									<input type="file" name="img" class="img" id="fileInput4" accept="image/*" onchange="previewImage(event, 'imgPreview4')">
+								</div>
+								
+								<div class="t">
+									<input type="text" placeholder="Name" name="name">
+									<input type="text" placeholder="Which position" name="position">
+									<input type="text" placeholder="Description" name="description"><br>
+									<button type="submit"  name="btn4" class="delete-btn">Save</button>
+								</div>
+							</form>
+		
+		
+						</div>
+		
+						<div class="com1">
+							<form action="../PHP/r1.php" method="post"  enctype="multipart/form-data">
+								<div class="imgBx">
+									<label for="fileInput5">
+										<img src="img/placeholder.png" id="imgPreview5" alt=" ">
+									</label>
+									<input type="file"  name="img" class="img" id="fileInput5" accept="image/*" onchange="previewImage(event, 'imgPreview5')">
+								</div>
+								
+								<div class="t">
+									<input type="text" placeholder="Name" name="name">
+									<input type="text" placeholder="Which position" name="position">
+									<input type="text" placeholder="Description" name="description"> <br>
+									<button type="submit" name="btn5" class="delete-btn">Save</button>
+								</div>
+							</form>
+		
+						</div>
+						<div class="com1">
+							<form action="../PHP/r1.php" method="post"  enctype="multipart/form-data">
+								<div class="imgBx">
+									<label for="fileInput6">
+										<img src="img/placeholder.png" id="imgPreview6" alt=" ">
+									</label>
+									<input type="file" class="img" name="img" id="fileInput6" accept="image/*" onchange="previewImage(event, 'imgPreview6')">
+								</div>
+								
+								<div class="t">
+									<input type="text" placeholder="Name" name="name">
+									<input type="text" placeholder="Which position" name="position"> 
+									<input type="text" placeholder="Description" name="description"><br>
+									<button type="submit" name="btn6" class="delete-btn">Save</button>
+								</div>
+							</form>
+					</div>
+		
+				</div>
+		
+		
+			
+		</main>
+		
+	</section>
+	<script>
+        function previewImage(event, previewId) {
+            const fileInput = event.target;
+            const imgPreview = document.getElementById(previewId);
+
+            const file = fileInput.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    imgPreview.src = e.target.result;
+                };
+
+                reader.readAsDataURL(file);
+            } else {
+                imgPreview.src = 'img/placeholder.png'; // Default image or blank image URL
+            }
+        }
+    </script>
+	<script src="../JS/script.js"></script>
+</body>
+</html>
